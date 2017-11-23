@@ -1,0 +1,122 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.text {
+  &.mini { font-size: @mini; }
+  &.tiny { font-size: @tiny; }
+  &.small { font-size: @small; }
+  &.large { font-size: @large; }
+  &.big { font-size: @big; }
+  &.huge { font-size: @huge; }
+  &.massive { font-size: @massive; }
+}
+
+#intro-header {
+  margin-bottom: 1.5em;
+}
+
+nav.ui.site.menu {
+  font-size: @small;
+
+  .header.item {
+    font-size: 1.5em;
+    text-transform: lowercase;
+    letter-spacing: 1.75;
+  }
+
+  @media only screen and (max-width: 735px) {
+    display: block;
+    flex-direction: column;
+    font-size: @mini;
+  }
+}
+
+.masthead.segment {
+  min-height: 150px;
+
+  @media only screen and (min-width: (@mobileBreakpoint + 1px)) {
+    min-height: 250px;
+  }
+
+  @media only screen and (min-width: (@tabletBreakpoint + 1px)) {
+    min-height: 350px;
+  }
+
+  .image.masthead {
+    margin-bottom: 2em;
+  }
+
+  h1.ui.header {
+    margin-top: 1.5em;
+    font-size: 2em;
+
+    .sub.header { text-transform: none; line-height: 1.4em; }
+
+    @media only screen and (min-width: (@mobileBreakpoint + 1px)) {
+      font-size: 2.5em;
+    }
+
+    @media only screen and (min-width: (@tabletBreakpoint + 1px)) {
+      font-size: 4em;
+    }    
+  }
+
+  h3 {
+    font-size: @h4;
+
+    @media only screen and (min-width: (@mobileBreakpoint + 1px)) {
+      font-size: @h3;
+    }
+  }
+
+  .social.links {
+    margin-bottom: 3em;
+  }
+}
+
+.spaced.segment .button {
+  margin-bottom: 0.75em;
+}
+
+.spaced.list .item {
+  margin-bottom: 0.75em;
+}
+
+/* Main content */
+.content.column img {
+  max-width: 100%;
+}
+
+/* Posts */
+.post.content.segment {
+
+  &.huge {
+    font-size: @tiny;
+
+    @media only screen and (min-width: (@mobileBreakpoint + 1)) {
+      font-size: @small;
+    }
+
+    @media only screen and (min-width: (@tabletBreakpoint + 1)) {
+      font-size: @large;
+    }
+  }
+
+  // Blockquote styles
+  .blockquote {
+    border-left: 0.25em solid #ddd;
+    padding-left: 0.5em;
+  }
+
+  // List styles
+  ul, ol {
+    line-height: @lineHeight;
+    li { margin-bottom: 0.5em; }
+  }
+
+  // Code paragraph styles
+  pre {
+    line-height: @lineHeight;
+  }
+}

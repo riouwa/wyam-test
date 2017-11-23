@@ -1,0 +1,28 @@
+</div>
+
+<img class="ui masthead responsive image"
+  srcset="/assets/images/masthead@0.25x.jpg 648w,
+          /assets/images/masthead@0.5x.jpg 1295w,
+          /assets/images/masthead@0.75x.jpg 1943w,
+          /assets/images/masthead.jpg 2590w"
+  sizes="100vw">
+
+<div class="ui container">
+@if(Context.String(BlogKeys.Intro) != null)
+{                  
+    <p class="ui text massive">
+      Hi, I'm Kamran Ayub aka Kamranicus. I'm a professional full-stack developer in Minneapolis.
+      I love programming, front-end design, and UX.</p>
+    <p class="ui text massive">
+      I <a href="/posts">write</a>, 
+      I <a href="/speaking">speak</a>, 
+      I <a href="/projects">code</a>, 
+      I <a href="/projects">teach</a>,
+      I <a href="/travel">travel</a> and 
+      I <a href="https://keeptrackofmygames.com/users/kamranicus">play</a>.
+    </p>
+}
+
+<div class="social links">
+  @Html.Partial("_SocialLinks")
+</div>

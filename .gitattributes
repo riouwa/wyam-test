@@ -1,0 +1,15 @@
+###############################################################################
+# Set default behavior to automatically normalize line endings.
+###############################################################################
+* text=auto
+
+*.jpg binary
+*.gif binary
+*.png binary
+*.jpeg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.zip binary
+*.tar binary

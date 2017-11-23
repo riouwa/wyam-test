@@ -1,17 +1,49 @@
-hosts:
-  api.nuget.org: 93.184.221.200
-    
+init:
+  - git config --global core.autocrlf true
+
 environment:
-  VisualStudioVersion: 15.0
-  MSBuildToolsVersion: 15.0
+  global:
+    GH_REF: github.com/kamranayub/kamranayub.github.io.git
+    WYAM_VERSION: v1.1.0
+  matrix:
+    - nodejs_version: "6"
 
-image: Visual Studio 2017
+platform:
+  - x64
 
-# Temporarily needed until curl added to PATH
-# See http://help.appveyor.com/discussions/problems/6312-curl-command-not-found
-# And https://github.com/appveyor/ci/issues/1431
+cache:
+  - C:/Users/appveyor/.nuget/packages -> package.json
+  - node_modules -> package.json
+  - node_cache -> package.json  
+
+branches:
+  only:
+    - source
+
+matrix:
+  fast_finish: true
+
 install:
-- set PATH=C:\Program Files\Git\mingw64\bin;%PATH%
+  - ps: Install-Product node $env:nodejs_version
+  - mkdir wyam
+  - 7z x tools/Wyam-%WYAM_VERSION%.zip -owyam -r
+  - npm install
 
 build_script:
-  - ps: .\build.ps1 -Target "AppVeyor"
+  - .\wyam\Wyam.exe -r Blog -t CleanBlog
+
+test: off
+
+on_success:
+  - git rev-parse HEAD > _commit.txt
+  - set /P CURRENT_COMMIT=< _commit.txt
+  - git clone -b master "https://%GH_TOKEN%@%GH_REF%" _deploy  
+  - cd _deploy
+  - git rm -rf .
+  - xcopy ..\output /e /y
+  - git status
+  - git config user.name "Appveyor"
+  - git config user.email "appveyor@kamranicus.com"
+  - git add -A
+  - git commit --allow-empty -m "Deploying site for %CURRENT_COMMIT%"
+  - git push origin master

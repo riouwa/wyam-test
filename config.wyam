@@ -1,22 +1,37 @@
-// This directive installs packages from NuGet and it what you would normally use
-// NOTE: If running the example against a downloaded version of Wyam, uncomment this line and comment the next line
-// #n Wyam.Yaml
-// #n Wyam.Markdown
+using Wyam.Web.Pipelines;
 
-// This directive loads modules directly from the local build and is used for testing
-// NOTE: If running the example against modules built from source, call wyam.exe from the Wyam.Examples.Tests/bin/Debug folder 
-#a **/*
+Settings[Keys.Host] = "kamranicus.com";
+Settings[Keys.LinksUseHttps] = true;
 
-// Normalize the culture for the examples so they produce the same output regardless of system culture
-System.Globalization.CultureInfo.DefaultThreadCurrentCulture
-    = System.Globalization.CultureInfo.CreateSpecificCulture("en-US");
+Settings[BlogKeys.Title] = "Kamranicus";
+Settings[BlogKeys.Description] = "Kamran Ayub";
+Settings[BlogKeys.Intro] = "Hi, I'm a professional full-stack developer who also loves to write, speak at conferences, work on side projects, contribute to open source, make games, and play them.";
+Settings["FeedUrl"] = "http://feeds.feedburner.com/Kamranicus";
+Settings[BlogKeys.CaseInsensitiveTags] = true;
+Settings[BlogKeys.AtomPath] = "atom.xml";
+Settings[BlogKeys.IndexPageSize] = 6;
 
-Pipelines.Add(
-	ReadFiles("*.md"),
-	FrontMatter(Yaml()),
-	Markdown(),
-	ReplaceIn("{{CONTENT}}", ReadFiles("template.html")),
-	Replace("{{TITLE}}", @doc.Get("Title", "Default Title")),
-	Replace("{{DESC}}", @doc.Get("Description", "Default Description")),
-	WriteFiles(".html")
-);
+Settings[BlogKeys.IgnoreFolders] = new string[] {
+  "guides/*.md"
+};
+
+var Guides = new Pages(
+  "Guides",
+  new PagesSettings
+  {
+      PagesPattern = ctx => "guides",
+      MarkdownConfiguration = ctx => ctx.String(BlogKeys.MarkdownConfiguration),
+      MarkdownExtensionTypes = ctx => ctx.List<Type>(BlogKeys.MarkdownExtensionTypes),
+      ProcessIncludes = (doc, ctx) => doc.Bool(BlogKeys.ProcessIncludes)
+  });
+
+var RenderGuides = new RenderPages(
+  "RenderGuides",
+  new RenderPagesSettings
+  {
+      Pipelines = new string[] { Guides },
+      Layout = (doc, ctx) => "/_GuideLayout.cshtml"
+  });
+
+Pipelines.InsertAfter("Pages", "Guides", Guides);
+Pipelines.InsertAfter("RenderPages", "RenderGuides", RenderGuides);
