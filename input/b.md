@@ -5,4 +5,4 @@ Description: Description B
 
 Welcome!
 
-Here's the description again: {{DESC}}
+Here's the description again:
