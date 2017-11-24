@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
-		<title>Kamranicus</title>
-		<link>https://kamranicus.com/wyam-test</link>
-		<description>Kamran Ayub</description>
+		<title>language</title>
+		<link>https://riouwa.github.io/wyam-test</link>
+		<description>coala</description>
 		<copyright>2017</copyright>
-		<pubDate>Fri, 24 Nov 2017 05:19:15 GMT</pubDate>
-		<lastBuildDate>Fri, 24 Nov 2017 05:19:15 GMT</lastBuildDate>
+		<pubDate>Fri, 24 Nov 2017 06:21:54 GMT</pubDate>
+		<lastBuildDate>Fri, 24 Nov 2017 06:21:54 GMT</lastBuildDate>
 		<item>
 			<title>Here's a Drone Docker image with Node.js and Chrome headless</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-11-20-node-chrome-headless-drone-image</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-11-20-node-chrome-headless-drone-image</link>
 			<description>&lt;p&gt;I worked on a fun little aside this last week at work. We are using &lt;a href="https://github.com/drone/drone"&gt;Drone&lt;/a&gt; to perform our CI builds (it's just like &lt;a href="http://travis-ci.org"&gt;Travis CI&lt;/a&gt;). Well, the default Docker &lt;code&gt;node&lt;/code&gt; image is built on Debian and when run on Drone 5 it does not contain all the packages needed to use Chrome Headless (as &lt;a href="https://github.com/Googlechrome/puppeteer/issues/290"&gt;documented in this GH issue&lt;/a&gt;). We're using Puppeteer to run Chrome headless with Karma to run our Angular tests.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-11-20-node-chrome-headless-drone-image</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-11-20-node-chrome-headless-drone-image</guid>
 			<pubDate>Mon, 20 Nov 2017 20:52:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;I worked on a fun little aside this last week at work. We are using &lt;a href="https://github.com/drone/drone"&gt;Drone&lt;/a&gt; to perform our CI builds (it's just like &lt;a href="http://travis-ci.org"&gt;Travis CI&lt;/a&gt;). Well, the default Docker &lt;code&gt;node&lt;/code&gt; image is built on Debian and when run on Drone 5 it does not contain all the packages needed to use Chrome Headless (as &lt;a href="https://github.com/Googlechrome/puppeteer/issues/290"&gt;documented in this GH issue&lt;/a&gt;). We're using Puppeteer to run Chrome headless with Karma to run our Angular tests.&lt;/p&gt;
 &lt;p&gt;We were running a bash script to install them when the build started but I went ahead and just packaged it all as a Docker container. This is a general purpose container image but using it with Drone sped up our builds by an order of magnitude.&lt;/p&gt;
@@ -25,9 +25,9 @@
 		</item>
 		<item>
 			<title>Dynamic component rendering in AngularJS</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-11-17-dynamic-angularjs-components</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-11-17-dynamic-angularjs-components</link>
 			<description>&lt;p&gt;We had a feature we needed in our AngularJS 1.5 app recently that required us to show different Angular components based on some data we got back from an API--basically we ask some questions and those questions can have different "types" of answers: number, text, list of values, multi-list of values, external API list, etc.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-11-17-dynamic-angularjs-components</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-11-17-dynamic-angularjs-components</guid>
 			<pubDate>Fri, 17 Nov 2017 18:45:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;We had a feature we needed in our AngularJS 1.5 app recently that required us to show different Angular components based on some data we got back from an API--basically we ask some questions and those questions can have different &amp;quot;types&amp;quot; of answers: number, text, list of values, multi-list of values, external API list, etc.&lt;/p&gt;
 &lt;p&gt;These answer types were a good candidate to keep encapsulated inside of Angular components: they manage their own state and just use component bindings to bind data or call the overall parent controller.&lt;/p&gt;
@@ -109,9 +109,9 @@ const AnswerText = ({ question, onAnswerChange }) =&amp;gt;
 		</item>
 		<item>
 			<title>Frontend Masters Workshop: Node API Design v2 with Scott Moss</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-10-27-frontend-masters-node-api-graphql</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-10-27-frontend-masters-node-api-graphql</link>
 			<description>&lt;p&gt;On Oct 16 &amp;amp; 17 a fellow coworker and I attended a &lt;a href="https://frontendmasters.com"&gt;Frontend Masters&lt;/a&gt; workshop in person on &lt;a href="https://frontendmasters.com/workshops/api-design-in-node-v2/"&gt;Node.js API Design by Scott Moss&lt;/a&gt;.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-10-27-frontend-masters-node-api-graphql</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-10-27-frontend-masters-node-api-graphql</guid>
 			<pubDate>Fri, 27 Oct 2017 19:02:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;On Oct 16 &amp;amp; 17 a fellow coworker and I attended a &lt;a href="https://frontendmasters.com"&gt;Frontend Masters&lt;/a&gt; workshop in person on &lt;a href="https://frontendmasters.com/workshops/api-design-in-node-v2/"&gt;Node.js API Design by Scott Moss&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I love FEM workshops (this is my second time in-person) since they're pretty hands-on and you can interactively ask questions. It's awesome that they are FREE to attend in-person if you get chosen and I've been lucky enough to attend both times I applied. It's only a block away from my work and bus stop in downtown Minneapolis.&lt;/p&gt;
@@ -150,9 +150,9 @@ const AnswerText = ({ question, onAnswerChange }) =&amp;gt;
 		</item>
 		<item>
 			<title>Becoming a Pluralsight Author</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-10-10-becoming-a-pluralsight-author</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-10-10-becoming-a-pluralsight-author</link>
 			<description>&lt;p&gt;&lt;img src="images/pluralsight.jpg" class="img-fluid" alt="Pluralsight"&gt;&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-10-10-becoming-a-pluralsight-author</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-10-10-becoming-a-pluralsight-author</guid>
 			<pubDate>Wed, 11 Oct 2017 03:50:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;&lt;img src="images/pluralsight.jpg" class="img-fluid" alt="Pluralsight" /&gt;&lt;/p&gt;
 &lt;p&gt;I have to admit it's tough for me to comprehend writing this post even though I passed the audition months ago. When I applied to become a &lt;a href="https://pluralsight.com"&gt;Pluralsight&lt;/a&gt; author, I wasn't sure what to expect. Now, here I am receiving the green light on my first course (it's on RavenDB 4, more on that later). Yes, &lt;a href="https://kamranicus.com/posts/2017-01-31-introduction-to-typescript-course-packt-publishing"&gt;I successfully published my TypeScript course&lt;/a&gt; last January through Packt but I didn't necessarily consider myself &amp;quot;Pluralsight author&amp;quot; material. What does that even mean exactly?&lt;/p&gt;
@@ -202,9 +202,9 @@ const AnswerText = ({ question, onAnswerChange }) =&amp;gt;
 		</item>
 		<item>
 			<title>Using AngularJS 1.5 with webpack, babel, and Karma/Jest</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-10-06-webpack-karma-jest-babel-angularjs</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-10-06-webpack-karma-jest-babel-angularjs</link>
 			<description>&lt;p&gt;This took me awhile to get right so I'm sharing my experience trying to get webpack 3, babel 6, and Karma to work together for testing Angular 1.5 apps. I also have an example using Jest, which I actually prefer over Karma.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-10-06-webpack-karma-jest-babel-angularjs</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-10-06-webpack-karma-jest-babel-angularjs</guid>
 			<pubDate>Fri, 06 Oct 2017 18:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;This took me awhile to get right so I'm sharing my experience trying to get webpack 3, babel 6, and Karma to work together for testing Angular 1.5 apps. I also have an example using Jest, which I actually prefer over Karma.&lt;/p&gt;
 &lt;h2 id="some-context"&gt;Some context&lt;/h2&gt;
@@ -270,9 +270,9 @@ testsContext.keys().forEach(testsContext);
 		</item>
 		<item>
 			<title>Dynamically Importing React Material Icons Using Webpack</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-09-02-dynamic-import-material-icons-react</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-09-02-dynamic-import-material-icons-react</link>
 			<description>&lt;p&gt;The sample code for this post is &lt;a href="https://github.com/kamranayub/example-webpack-dynamic-import"&gt;available on my GitHub&lt;/a&gt;.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-09-02-dynamic-import-material-icons-react</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-09-02-dynamic-import-material-icons-react</guid>
 			<pubDate>Sun, 03 Sep 2017 03:10:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;The sample code for this post is &lt;a href="https://github.com/kamranayub/example-webpack-dynamic-import"&gt;available on my GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;One of my team members was working on our app's navigation and for the icons we are using the &lt;a href="https://www.npmjs.com/package/material-ui-icons"&gt;material-ui-icons&lt;/a&gt; package. This is an npm package that provides the Material UI icons as React components. We're also using webpack for bundling and babel for transpiling.&lt;/p&gt;
@@ -370,9 +370,9 @@ const MaterialIconAsync = ({ icon }) =&amp;gt; {
 		</item>
 		<item>
 			<title>Today I started at Target</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-08-28-joined-target</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-08-28-joined-target</link>
 			<description>&lt;p&gt;Today marks a pretty big change in my career as I transition to a new software engineering role at &lt;a href="http://target.com"&gt;Target&lt;/a&gt;. That change comes after a 7 year stint at General Mills where I worked right out of college. I had an amazing time there and made lifelong friends. I'm hoping to continue the trend of working at great places! If you're looking for an awesome place to work, I encourage you to reach out to me for a referral or &lt;a href="http://careers.generalmills.com/job-search-results/?keyword=devops"&gt;apply online&lt;/a&gt; at General Mills if you want to work on DevOps stuff with a .NET stack.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-08-28-joined-target</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-08-28-joined-target</guid>
 			<pubDate>Tue, 29 Aug 2017 02:20:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Today marks a pretty big change in my career as I transition to a new software engineering role at &lt;a href="http://target.com"&gt;Target&lt;/a&gt;. That change comes after a 7 year stint at General Mills where I worked right out of college. I had an amazing time there and made lifelong friends. I'm hoping to continue the trend of working at great places! If you're looking for an awesome place to work, I encourage you to reach out to me for a referral or &lt;a href="http://careers.generalmills.com/job-search-results/?keyword=devops"&gt;apply online&lt;/a&gt; at General Mills if you want to work on DevOps stuff with a .NET stack.&lt;/p&gt;
 &lt;p&gt;My new role is on an internal product team where I'll be working on Node.js apps with Angular and React front-ends. It'll be a pretty big shift from doing primarily Microsoft stack and ASP.NET/C# to full stack JavaScript. Of course, I'm no stranger to these technologies but rather than developing in those stacks on side projects I'll be doing it full-time which should help me learn it a lot more deeply.&lt;/p&gt;
@@ -382,9 +382,9 @@ const MaterialIconAsync = ({ icon }) =&amp;gt; {
 		</item>
 		<item>
 			<title>Thanks for attending Midwest.js</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-08-28-mjs-thanks</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-08-28-mjs-thanks</link>
 			<description>&lt;p&gt;A couple weeks ago &lt;a href="https://kamranicus.com/posts/2017-07-14-midwestjs-react-typescript"&gt;I spoke at Midwest.js&lt;/a&gt; on &lt;strong&gt;Building Scalable, Maintainable Apps Using TypeScript and React&lt;/strong&gt;. The conference itself was great I thought and I plan to attend again! I learned some stuff about GraphQL that I didn't know and learned about V8 compiler optimizations from &lt;a href="http://twitter.com/captainsafia"&gt;@captainsafia&lt;/a&gt;.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-08-28-mjs-thanks</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-08-28-mjs-thanks</guid>
 			<pubDate>Tue, 29 Aug 2017 00:48:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;A couple weeks ago &lt;a href="https://kamranicus.com/posts/2017-07-14-midwestjs-react-typescript"&gt;I spoke at Midwest.js&lt;/a&gt; on &lt;strong&gt;Building Scalable, Maintainable Apps Using TypeScript and React&lt;/strong&gt;. The conference itself was great I thought and I plan to attend again! I learned some stuff about GraphQL that I didn't know and learned about V8 compiler optimizations from &lt;a href="http://twitter.com/captainsafia"&gt;&amp;#64;captainsafia&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The slides are online at &lt;a href="http://bit.ly/mjs-react-ts."&gt;http://bit.ly/mjs-react-ts.&lt;/a&gt;&lt;/p&gt;
@@ -395,9 +395,9 @@ const MaterialIconAsync = ({ icon }) =&amp;gt; {
 		</item>
 		<item>
 			<title>Building Scalable, Maintainable Apps Using TypeScript and React at Midwest.js</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-07-14-midwestjs-react-typescript</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-07-14-midwestjs-react-typescript</link>
 			<description>&lt;p&gt;I'm excited to be speaking about &lt;strong&gt;Building Scalable, Maintainable Apps Using TypeScript and React&lt;/strong&gt; at &lt;a href="http://midwestjs.com/#/schedule"&gt;Midwest.js&lt;/a&gt; August 17, my scheduled time is 1:30pm.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-07-14-midwestjs-react-typescript</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-07-14-midwestjs-react-typescript</guid>
 			<pubDate>Fri, 14 Jul 2017 17:21:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;I'm excited to be speaking about &lt;strong&gt;Building Scalable, Maintainable Apps Using TypeScript and React&lt;/strong&gt; at &lt;a href="http://midwestjs.com/#/schedule"&gt;Midwest.js&lt;/a&gt; August 17, my scheduled time is 1:30pm.&lt;/p&gt;
 &lt;p&gt;Here's what to expect:&lt;/p&gt;
@@ -413,10 +413,10 @@ const MaterialIconAsync = ({ icon }) =&amp;gt; {
 		</item>
 		<item>
 			<title>Refactoring Conditional Dependency Injection</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-07-12-conditional-dependency-injection</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-07-12-conditional-dependency-injection</link>
 			<description>&lt;p&gt;Recently a colleague sent me a question about some advice using &lt;a href="http://www.ninject.org/"&gt;Ninject&lt;/a&gt;, a popular .NET dependency injection framework. It went something like this:&lt;/p&gt;</description>
-			<enclosure url="https://kamranicus.com/wyam-test/images/2017-07-12-masthead.png" length="0" type="image" />
-			<guid>https://kamranicus.com/wyam-test/posts/2017-07-12-conditional-dependency-injection</guid>
+			<enclosure url="https://riouwa.github.io/wyam-test/images/2017-07-12-masthead.png" length="0" type="image" />
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-07-12-conditional-dependency-injection</guid>
 			<pubDate>Thu, 13 Jul 2017 02:32:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Recently a colleague sent me a question about some advice using &lt;a href="http://www.ninject.org/"&gt;Ninject&lt;/a&gt;, a popular .NET dependency injection framework. It went something like this:&lt;/p&gt;
 &lt;blockquote class="blockquote"&gt;
@@ -815,12 +815,12 @@ public bool CanProcess(DownloadType type) {
 		</item>
 		<item>
 			<title>New Video Let's CODE! Basic CSS</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-06-27-lets-code-basic-css</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-06-27-lets-code-basic-css</link>
 			<description>&lt;p&gt;I work a ton with my friend and colleague, &lt;a href="https://erikonarheim.com"&gt;Erik Onarheim&lt;/a&gt;. Sometimes I think my wife is jealous (love you, honey!). Anyway, we are always learning from and bouncing ideas off each other. We thought it might be fun to sit down and record some videos on things we wanted help with so I'm happy to introduce our new channel, &lt;a href="https://www.youtube.com/channel/UCEQpXOMvO6QSukmFmqqxq7w"&gt;Let's CODE! with Erik and Kamran&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Erik isn't very good at CSS as he professes himself at the beginning of the video. I have more experience doing design so I said I'd help him out. In a mere hour and a half, we go from knowing only basic CSS to styling a whole React.js calculator sample app from the ground up. Take a look!&lt;/p&gt;
 
 &lt;p&gt;We cover a wide range of topics like media queries, color, typography, box model, flexbox layouts, and more. Rather than just explaining topics, we learn them as we need to (aka "just-in-time" learning). Since making the video, he's expressed how much it helped him on a recent project so I'd call it a job well done.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-06-27-lets-code-basic-css</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-06-27-lets-code-basic-css</guid>
 			<pubDate>Tue, 27 Jun 2017 12:02:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;I work a ton with my friend and colleague, &lt;a href="https://erikonarheim.com"&gt;Erik Onarheim&lt;/a&gt;. Sometimes I think my wife is jealous (love you, honey!). Anyway, we are always learning from and bouncing ideas off each other. We thought it might be fun to sit down and record some videos on things we wanted help with so I'm happy to introduce our new channel, &lt;a href="https://www.youtube.com/channel/UCEQpXOMvO6QSukmFmqqxq7w"&gt;Let's CODE! with Erik and Kamran&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Erik isn't very good at CSS as he professes himself at the beginning of the video. I have more experience doing design so I said I'd help him out. In a mere hour and a half, we go from knowing only basic CSS to styling a whole React.js calculator sample app from the ground up. Take a look!&lt;/p&gt;
@@ -840,9 +840,9 @@ public bool CanProcess(DownloadType type) {
 		</item>
 		<item>
 			<title>Downloading Git LFS Files from TFS or VSTS</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-06-14-downloading-git-lfs-files-from-tfs-vsts</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-06-14-downloading-git-lfs-files-from-tfs-vsts</link>
 			<description>&lt;p&gt;Remember that post I wrote about &lt;a href="/posts/2017-02-04-powershell-dsc-git-lfs-binaries"&gt;using Git LFS to store installers and binaries&lt;/a&gt; when using Powershell DSC? Well, it turns out my sample code was wrong! I &lt;em&gt;thought&lt;/em&gt; it was working because my files were previously committed and not actually being hosted via Git LFS.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-06-14-downloading-git-lfs-files-from-tfs-vsts</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-06-14-downloading-git-lfs-files-from-tfs-vsts</guid>
 			<pubDate>Thu, 15 Jun 2017 02:32:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Remember that post I wrote about &lt;a href="/posts/2017-02-04-powershell-dsc-git-lfs-binaries"&gt;using Git LFS to store installers and binaries&lt;/a&gt; when using Powershell DSC? Well, it turns out my sample code was wrong! I &lt;em&gt;thought&lt;/em&gt; it was working because my files were previously committed and not actually being hosted via Git LFS.&lt;/p&gt;
 &lt;!-- More --&gt;
@@ -908,9 +908,9 @@ size 12345
 		</item>
 		<item>
 			<title>Adding SameSite Cookie Support In ASP.NET</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-02-23-samesite-cookies-in-asp-net</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-02-23-samesite-cookies-in-asp-net</link>
 			<description>&lt;p&gt;I was reading Scott Helme's post on how &lt;a href="https://scotthelme.co.uk/csrf-is-dead/"&gt;CSRF is Dead&lt;/a&gt; because of the new Same Site cookie spec (which is supported in &lt;a href="http://caniuse.com/#feat=same-site-cookie-attribute"&gt;Chrome and soon FF&lt;/a&gt;).&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-02-23-samesite-cookies-in-asp-net</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-02-23-samesite-cookies-in-asp-net</guid>
 			<pubDate>Thu, 23 Feb 2017 23:18:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;I was reading Scott Helme's post on how &lt;a href="https://scotthelme.co.uk/csrf-is-dead/"&gt;CSRF is Dead&lt;/a&gt; because of the new Same Site cookie spec (which is supported in &lt;a href="http://caniuse.com/#feat=same-site-cookie-attribute"&gt;Chrome and soon FF&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;I wanted to add support into &lt;a href="http://ktomg.com"&gt;KTOMG&lt;/a&gt; so I was trying to figure out how to modify my authentication flow to add the attribute. However, &lt;a href="https://msdn.microsoft.com/en-us/library/system.web.httpcookie(v=vs.110).aspx"&gt;HttpCookie&lt;/a&gt; is sealed and can't be modified so what's a well meaning security citizen supposed to do?!&lt;/p&gt;
@@ -941,9 +941,9 @@ size 12345
 		</item>
 		<item>
 			<title>Building a Raspberry Pi 3 Baby Monitor</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-02-21-building-a-raspberry-pi-3-baby-monitor-livestream-audio-video</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-02-21-building-a-raspberry-pi-3-baby-monitor-livestream-audio-video</link>
 			<description>&lt;p&gt;Our little baby boy came into the world February 6 and we couldn't be happier! During the course of preparing for the birth and buying items, a baby monitor had been high on the list--but I wasn't super happy with the choices available. So I &lt;a href="/guides/raspberry-pi-3-baby-monitor"&gt;built my own&lt;/a&gt;!&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-02-21-building-a-raspberry-pi-3-baby-monitor-livestream-audio-video</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-02-21-building-a-raspberry-pi-3-baby-monitor-livestream-audio-video</guid>
 			<pubDate>Tue, 21 Feb 2017 19:25:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Our little baby boy came into the world February 6 and we couldn't be happier! During the course of preparing for the birth and buying items, a baby monitor had been high on the list--but I wasn't super happy with the choices available. So I &lt;a href="/guides/raspberry-pi-3-baby-monitor"&gt;built my own&lt;/a&gt;!&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -960,9 +960,9 @@ size 12345
 		</item>
 		<item>
 			<title>Store Binaries Next to Powershell DSC Using Git LFS</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-02-04-powershell-dsc-git-lfs-binaries</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-02-04-powershell-dsc-git-lfs-binaries</link>
 			<description>&lt;p&gt;A common need when configuring servers using &lt;a href="https://msdn.microsoft.com/en-us/powershell/dsc/overview"&gt;Powershell DSC&lt;/a&gt; is installing software or copying binary files, for example, installing the Java SDK, Sysinternals, MSI installers, or what have you.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-02-04-powershell-dsc-git-lfs-binaries</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-02-04-powershell-dsc-git-lfs-binaries</guid>
 			<pubDate>Sat, 04 Feb 2017 15:11:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;A common need when configuring servers using &lt;a href="https://msdn.microsoft.com/en-us/powershell/dsc/overview"&gt;Powershell DSC&lt;/a&gt; is installing software or copying binary files, for example, installing the Java SDK, Sysinternals, MSI installers, or what have you.&lt;/p&gt;
 &lt;!-- More --&gt;
@@ -1060,9 +1060,9 @@ installers/sysinternals/SysInternalsSuite-2016-11-18.zip
 		</item>
 		<item>
 			<title>See You at Build 2017</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-02-01-build-2017</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-02-01-build-2017</link>
 			<description>&lt;p&gt;Come May 10, I'll be heading to Seattle for the &lt;a href="http://build.microsoft.com"&gt;Microsoft Build 2017&lt;/a&gt; conference with my good friend and co-worker, &lt;a href="http://twitter.com/erikonarheim"&gt;Erik Onarheim&lt;/a&gt;. We'll be looking forward to any talks around Windows Server containers, container orchestration, and other "DevOps" stuff related to what we do at work.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-02-01-build-2017</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-02-01-build-2017</guid>
 			<pubDate>Thu, 02 Feb 2017 01:45:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;Come May 10, I'll be heading to Seattle for the &lt;a href="http://build.microsoft.com"&gt;Microsoft Build 2017&lt;/a&gt; conference with my good friend and co-worker, &lt;a href="http://twitter.com/erikonarheim"&gt;Erik Onarheim&lt;/a&gt;. We'll be looking forward to any talks around Windows Server containers, container orchestration, and other &amp;quot;DevOps&amp;quot; stuff related to what we do at work.&lt;/p&gt;
 &lt;p&gt;I've always enjoyed my time at Build and my wife will be joining me, she's never been to Seattle so it'll be fun for her too!&lt;/p&gt;
@@ -1070,10 +1070,10 @@ installers/sysinternals/SysInternalsSuite-2016-11-18.zip
 		</item>
 		<item>
 			<title>Introduction to TypeScript Course Now Available</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-01-31-introduction-to-typescript-course-packt-publishing</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-01-31-introduction-to-typescript-course-packt-publishing</link>
 			<description>&lt;p&gt;I'm very excited to share that the course I've been working on the past few months, &lt;a href="https://www.packtpub.com/application-development/introduction-typescript-video"&gt;Introduction to TypeScript&lt;/a&gt; is now available to purchase through Packt Publishing! I should have some discount codes to share soon (will Tweet/update when available).&lt;/p&gt;
 &lt;p&gt;&lt;img src="/posts/images/2017-01-31-course-cover.jpg" class="img-fluid" alt="Course cover"&gt;&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-01-31-introduction-to-typescript-course-packt-publishing</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-01-31-introduction-to-typescript-course-packt-publishing</guid>
 			<pubDate>Tue, 31 Jan 2017 13:00:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;I'm very excited to share that the course I've been working on the past few months, &lt;a href="https://www.packtpub.com/application-development/introduction-typescript-video"&gt;Introduction to TypeScript&lt;/a&gt; is now available to purchase through Packt Publishing! I should have some discount codes to share soon (will Tweet/update when available).&lt;/p&gt;
 &lt;p&gt;&lt;img src="/posts/images/2017-01-31-course-cover.jpg" class="img-fluid" alt="Course cover" /&gt;&lt;/p&gt;
@@ -1131,9 +1131,9 @@ installers/sysinternals/SysInternalsSuite-2016-11-18.zip
 		</item>
 		<item>
 			<title>Exposing Subtle Timing Bugs With a Slow CI Server</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-01-23-subtle-bugs-exposed-with-slow-ci-servers</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-01-23-subtle-bugs-exposed-with-slow-ci-servers</link>
 			<description>&lt;p&gt;We ran into a subtle issue with &lt;a href="http://excaliburjs.com"&gt;Excalibur.js&lt;/a&gt; recently, as documented in &lt;a href="https://github.com/excaliburjs/Excalibur/pull/740"&gt;this pull request&lt;/a&gt;.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-01-23-subtle-bugs-exposed-with-slow-ci-servers</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-01-23-subtle-bugs-exposed-with-slow-ci-servers</guid>
 			<pubDate>Tue, 24 Jan 2017 02:44:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;We ran into a subtle issue with &lt;a href="http://excaliburjs.com"&gt;Excalibur.js&lt;/a&gt; recently, as documented in &lt;a href="https://github.com/excaliburjs/Excalibur/pull/740"&gt;this pull request&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Turns out one of the CI systems we use to test on Windows, &lt;a href="http://appveyor.com"&gt;Appveyor&lt;/a&gt;, exposed a long-standing bug in the draw code because it's &lt;strong&gt;slower&lt;/strong&gt; than the other Linux-based CI system we use, &lt;a href="http://travis-ci.org"&gt;Travis CI&lt;/a&gt;. I don't know whether that is something that Appveyor should be proud of--but it does showcase the fact that when testing asynchronous or animation-based libraries, testing on slower systems can reveal timing issues.&lt;/p&gt;
@@ -1147,9 +1147,9 @@ installers/sysinternals/SysInternalsSuite-2016-11-18.zip
 		</item>
 		<item>
 			<title>New Year, New Site Design Using Wyam Static Site Generator</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-01-21-new-design-wyam-generator</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-01-21-new-design-wyam-generator</link>
 			<description>&lt;p&gt;In preparation for the upcoming release of my new course, &lt;a href="https://www.packtpub.com/application-development/introduction-typescript-video"&gt;Introduction to TypeScript&lt;/a&gt; and because it's 2017, I decided it would be best to update my personal site with a more complete picture of myself.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-01-21-new-design-wyam-generator</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-01-21-new-design-wyam-generator</guid>
 			<pubDate>Sun, 22 Jan 2017 00:25:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;In preparation for the upcoming release of my new course, &lt;a href="https://www.packtpub.com/application-development/introduction-typescript-video"&gt;Introduction to TypeScript&lt;/a&gt; and because it's 2017, I decided it would be best to update my personal site with a more complete picture of myself.&lt;/p&gt;
 &lt;!-- More --&gt;
@@ -1202,10 +1202,10 @@ installers/sysinternals/SysInternalsSuite-2016-11-18.zip
 		</item>
 		<item>
 			<title>Site Down Alerts using Azure App Insights and Zapier</title>
-			<link>https://kamranicus.com/wyam-test/posts/2017-01-10-azure-alerts-zapier-sms</link>
+			<link>https://riouwa.github.io/wyam-test/posts/2017-01-10-azure-alerts-zapier-sms</link>
 			<description>&lt;p&gt;It's &lt;a href="https://twitter.com/jordan_belinsky/status/818967360132513792"&gt;happened again&lt;/a&gt;. Even though I &lt;em&gt;do&lt;/em&gt; get emailed whenever &lt;a href="http://ktomg.com"&gt;KTOMG&lt;/a&gt; goes down, I don't pay attention to my email 24/7 and the site can be down for a bit until I realize it. In this case, I was cooking and wasn't at my computer or on my phone. The Twitter notification by a friendly user actually got me to check!&lt;/p&gt;
 &lt;p&gt;I know this is one of the headaches &lt;a href="https://kamranicus.com/blog/2016/10/18/ravendb-standard-non-commercial-license/"&gt;I willingly signed up for&lt;/a&gt; by moving to my own VM--and even though I get emailed when the site's down I hate not knowing that &lt;strong&gt;immediately&lt;/strong&gt;.&lt;/p&gt;</description>
-			<guid>https://kamranicus.com/wyam-test/posts/2017-01-10-azure-alerts-zapier-sms</guid>
+			<guid>https://riouwa.github.io/wyam-test/posts/2017-01-10-azure-alerts-zapier-sms</guid>
 			<pubDate>Wed, 11 Jan 2017 02:01:00 GMT</pubDate>
 			<content:encoded>&lt;p&gt;It's &lt;a href="https://twitter.com/jordan_belinsky/status/818967360132513792"&gt;happened again&lt;/a&gt;. Even though I &lt;em&gt;do&lt;/em&gt; get emailed whenever &lt;a href="http://ktomg.com"&gt;KTOMG&lt;/a&gt; goes down, I don't pay attention to my email 24/7 and the site can be down for a bit until I realize it. In this case, I was cooking and wasn't at my computer or on my phone. The Twitter notification by a friendly user actually got me to check!&lt;/p&gt;
 &lt;p&gt;I know this is one of the headaches &lt;a href="https://kamranicus.com/blog/2016/10/18/ravendb-standard-non-commercial-license/"&gt;I willingly signed up for&lt;/a&gt; by moving to my own VM--and even though I get emailed when the site's down I hate not knowing that &lt;strong&gt;immediately&lt;/strong&gt;.&lt;/p&gt;
