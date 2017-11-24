@@ -1,4 +1,4 @@
-## Kamran Ayub Personal Blog
+## coala Language Theory Website
 
 - Built with Wyam static site generator
 - Semantic UI framework
