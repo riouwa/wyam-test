@@ -2,7 +2,7 @@ using Wyam.Web.Pipelines;
 
 Settings[Keys.Host] = "kamranicus.com";
 Settings[Keys.LinksUseHttps] = true;
-
+Settings[Keys.LinkRoot] = "/wyam-test";
 Settings[BlogKeys.Title] = "Kamranicus";
 Settings[BlogKeys.Description] = "Kamran Ayub";
 Settings[BlogKeys.Intro] = "Hi, I'm a professional full-stack developer who also loves to write, speak at conferences, work on side projects, contribute to open source, make games, and play them.";
