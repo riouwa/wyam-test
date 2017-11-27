@@ -4,22 +4,6 @@
 	<id>https://riouwa.github.io/wyam-test</id>
 	<title>language.coala</title>
 	<rights>2017</rights>
-	<updated>2017-11-24T13:00:17Z</updated>
+	<updated>2017-11-27T10:46:19Z</updated>
 	<subtitle>coala</subtitle>
-	<entry>
-		<link href="https://riouwa.github.io/wyam-test/posts/2017-11-20-node-chrome-headless-drone-image" />
-		<id>https://riouwa.github.io/wyam-test/posts/2017-11-20-node-chrome-headless-drone-image</id>
-		<title>Here's a Drone Docker image with Node.js and Chrome headless</title>
-		<updated>2017-11-20T20:52:00Z</updated>
-		<content>&lt;p&gt;I worked on a fun little aside this last week at work. We are using &lt;a href="https://github.com/drone/drone"&gt;Drone&lt;/a&gt; to perform our CI builds (it's just like &lt;a href="http://travis-ci.org"&gt;Travis CI&lt;/a&gt;). Well, the default Docker &lt;code&gt;node&lt;/code&gt; image is built on Debian and when run on Drone 5 it does not contain all the packages needed to use Chrome Headless (as &lt;a href="https://github.com/Googlechrome/puppeteer/issues/290"&gt;documented in this GH issue&lt;/a&gt;). We're using Puppeteer to run Chrome headless with Karma to run our Angular tests.&lt;/p&gt;
-&lt;p&gt;We were running a bash script to install them when the build started but I went ahead and just packaged it all as a Docker container. This is a general purpose container image but using it with Drone sped up our builds by an order of magnitude.&lt;/p&gt;
-&lt;p&gt;You can find it in &lt;a href="https://github.com/kamranayub/drone-images"&gt;my Drone image repository&lt;/a&gt;. I'll be sure to add anymore useful Drone images I end up making there too!&lt;/p&gt;
-&lt;p&gt;With Puppeteer, I also had to use these args:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;--no-sandbox --disable-setuid-sandbox
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;It's possible you don't need them but once I got it working I didn't revisit it in depth.&lt;/p&gt;
-&lt;p&gt;I could also publish this to the public registry, just let me know in the comments if you'd like me to--otherwise, feel free to do so.&lt;/p&gt;
-</content>
-		<summary>&lt;p&gt;I worked on a fun little aside this last week at work. We are using &lt;a href="https://github.com/drone/drone"&gt;Drone&lt;/a&gt; to perform our CI builds (it's just like &lt;a href="http://travis-ci.org"&gt;Travis CI&lt;/a&gt;). Well, the default Docker &lt;code&gt;node&lt;/code&gt; image is built on Debian and when run on Drone 5 it does not contain all the packages needed to use Chrome Headless (as &lt;a href="https://github.com/Googlechrome/puppeteer/issues/290"&gt;documented in this GH issue&lt;/a&gt;). We're using Puppeteer to run Chrome headless with Karma to run our Angular tests.&lt;/p&gt;</summary>
-	</entry>
 </feed>
