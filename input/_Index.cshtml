@@ -4,6 +4,33 @@
 
 <div class="ui stackable grid container">
     <div class="ten wide column">      
+        @{
+            bool first = true;
+            foreach(IDocument doc in Model.DocumentList(Keys.PageDocuments))
+            {                
+                if (!first)
+                {
+                    <div class="ui hidden divider"></div>
+                }
+                first = false;
+                string lead = doc.String(BlogKeys.Lead);
+                <div class="post-preview">
+                  <h4 class="ui grey header">
+                    @(doc.Get<DateTime>(BlogKeys.Published).ToLongDateString())
+                  </h4>
+                  <a href="@Context.GetLink(doc)">
+                    <h2 class="ui post title header">
+                      @doc.WithoutSettings.String(BlogKeys.Title)
 
+                      @if(!string.IsNullOrWhiteSpace(lead))
+                      {
+                        <div class="sub header">@lead</div>
+                      }
+                    </h2>
+                      
+                  </a>   
+                </div>       
+            }
+        }
     </div>
 </div>

@@ -35,3 +35,9 @@ var RenderGuides = new RenderPages(
 
 Pipelines.InsertAfter("Pages", "Guides", Guides);
 Pipelines.InsertAfter("RenderPages", "RenderGuides", RenderGuides);
+Pipelines.Add("Markdown",
+    ReadFiles("*.md"),
+    FrontMatter(Yaml()),
+    Markdown(),
+    WriteFiles(".html")
+);
