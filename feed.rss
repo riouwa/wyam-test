@@ -5,8 +5,17 @@
 		<link>https://riouwa.github.io/wyam-test</link>
 		<description>coala</description>
 		<copyright>2017</copyright>
-		<pubDate>Mon, 27 Nov 2017 11:00:37 GMT</pubDate>
-		<lastBuildDate>Mon, 27 Nov 2017 11:00:37 GMT</lastBuildDate>
+		<pubDate>Tue, 28 Nov 2017 03:18:13 GMT</pubDate>
+		<lastBuildDate>Tue, 28 Nov 2017 03:18:13 GMT</lastBuildDate>
+		<item>
+			<title>language.coala</title>
+			<link>https://riouwa.github.io/wyam-test/posts/java</link>
+			<description>&lt;p&gt;Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers. Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.&lt;/p&gt;</description>
+			<guid>https://riouwa.github.io/wyam-test/posts/java</guid>
+			<pubDate>Tue, 28 Nov 2017 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers &amp;quot;write once, run anywhere&amp;quot; (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers. Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.&lt;/p&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>Today I started at Target</title>
 			<link>https://riouwa.github.io/wyam-test/posts/2017-08-28-joined-target</link>
